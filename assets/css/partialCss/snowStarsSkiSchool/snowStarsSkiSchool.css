@@ -16,15 +16,16 @@
 }
 
 .snows-starts-team-start.snows-starts-team-start--snowboard-school {
-  background: url("../../../images/snowHillLarge.jpg");
+  background-image: url("../../../images/snowHillLarge.jpg");
 }
 
 .snows-starts-team-start.snows-starts-team-start--ups {
-  background: url("../../../images/upsCover.jpg");
+  background-image: url("../../../images/upsCover.jpg");
+  background-position: center bottom;
 }
 
 .snows-starts-team-start.snows-starts-team-start--kopaonik {
-  background: url("../../../images/kopaonik.jpg");
+  background-image: url("../../../images/kopaonik.jpg");
   background-position: center bottom;
 }
 
