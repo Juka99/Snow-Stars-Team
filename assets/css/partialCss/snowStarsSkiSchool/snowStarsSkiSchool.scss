@@ -30,22 +30,22 @@ $phonePortrait: 572px;
 .snows-starts-team-start {
     width: 100%;
     height: 70vh;
-    background: url('../../../images/peopleInSkiGear.webp');
+    background: url('../../../images/peopleInSkiGear.jpg');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 
     &.snows-starts-team-start--snowboard-school {
-        background: url('../../../images/snowHillLarge.webp');
+        background: url('../../../images/snowHillLarge.jpg');
     }
 
     &.snows-starts-team-start--ups {
-        background: url('../../../images/upsCover.webp');
+        background: url('../../../images/upsCover.jpg');
     }
 
     &.snows-starts-team-start--kopaonik {
-        background: url('../../../images/kopaonik.webp');
+        background: url('../../../images/kopaonik.jpg');
         background-position: center bottom;
     }
 }
