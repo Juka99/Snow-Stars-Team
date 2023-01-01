@@ -52,6 +52,7 @@ $phone: 400px;
 }
 
 .ski-school__title {
+    padding: 0 12px;
     
     @include phonePortrait {
         font-size: 32px;
@@ -59,7 +60,6 @@ $phone: 400px;
 
     @include phone {
         font-size: 26px;
-        padding: 0 12px;
     }
 }
 

@@ -35,6 +35,11 @@ $phonePortrait: 572px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
+
+    @include laptop {
+        background-attachment: unset;
+    }
 
     &.snows-starts-team-start--snowboard-school {
         background: url('../../../images/snowHillLarge.jpg');

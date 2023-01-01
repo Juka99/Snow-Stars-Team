@@ -51,6 +51,10 @@ $phoneSmall: 370px;
     background-attachment: fixed;
     background-position: center bottom;
     background-repeat: no-repeat;
+
+    @include laptop {
+        background-attachment: unset;
+    }
 }
 
 .main-section__box {

@@ -6,6 +6,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-attachment: fixed;
+}
+
+@media (max-width: 1200px) {
+  .snows-starts-team-start {
+    background-attachment: unset;
+  }
 }
 
 .snows-starts-team-start.snows-starts-team-start--snowboard-school {

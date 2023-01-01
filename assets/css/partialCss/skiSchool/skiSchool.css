@@ -21,6 +21,10 @@
   }
 }
 
+.ski-school__title {
+  padding: 0 12px;
+}
+
 @media (max-width: 572px) {
   .ski-school__title {
     font-size: 32px;
@@ -30,7 +34,6 @@
 @media (max-width: 400px) {
   .ski-school__title {
     font-size: 26px;
-    padding: 0 12px;
   }
 }
 
