@@ -1,0 +1,165 @@
+.snows-starts-team-start {
+  width: 100%;
+  height: 70vh;
+  background: url("../../../images/peopleInSkiGear.webp");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.snows-starts-team-start.snows-starts-team-start--snowboard-school {
+  background: url("../../../images/snowHillLarge.webp");
+}
+
+.snows-starts-team-start.snows-starts-team-start--ups {
+  background: url("../../../images/upsCover.webp");
+}
+
+.snows-starts-team-start.snows-starts-team-start--kopaonik {
+  background: url("../../../images/kopaonik.webp");
+  background-position: center bottom;
+}
+
+.snows-starts-team-start__container {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.snows-starts-team-start__title {
+  font-size: 48px;
+  color: white;
+}
+
+@media (max-width: 572px) {
+  .snows-starts-team-start__title {
+    padding: 0 12px;
+    font-size: 40px;
+  }
+}
+
+.snows-starts-team-info {
+  padding: 48px 120px 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .snows-starts-team-info {
+    padding: 48px 60px 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .snows-starts-team-info {
+    padding: 48px 20px 0 20px;
+  }
+}
+
+@media (max-width: 572px) {
+  .snows-starts-team-info.snows-starts-team-info--snowboard-school {
+    padding: 48px 0 0 0;
+  }
+}
+
+.snows-starts-team-info.snows-starts-team-info--snowboard-school .accordion {
+  margin: 0;
+}
+
+.snows-starts-team-info.snows-starts-team-info--ups .ski-school__info, .snows-starts-team-info.snows-starts-team-info--kopaonik .ski-school__info {
+  margin-top: 0;
+}
+
+.snows-starts-team-info .snows-starts-team-info__title {
+  text-align: center;
+  font-size: 38px;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 1400px) {
+  .snows-starts-team-info .snows-starts-team-info__box:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.snows-starts-team-info .snows-starts-team-info__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  margin-top: 0;
+  border-left: 3px solid #cbcbcb;
+}
+
+@media (max-width: 1400px) {
+  .snows-starts-team-info .snows-starts-team-info__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.snows-starts-team-info .snows-starts-team-info__box img {
+  width: 400px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .snows-starts-team-info .snows-starts-team-info__box img {
+    width: 100%;
+  }
+}
+
+.custom-shape-divider-bottom-1672058429 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672058429 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1672058429 .shape-fill {
+  fill: #FFFFFF;
+}
+/*# sourceMappingURL=snowStarsSkiSchool.css.map */

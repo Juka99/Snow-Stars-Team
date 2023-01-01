@@ -1,0 +1,21 @@
+.the-button {
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background: #2b95f3;
+  min-width: 120px;
+  text-align: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-size: 18px;
+}
+
+.the-button i {
+  margin-left: 4px;
+}
+
+.the-button:hover {
+  background: #43a1f4;
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,213 @@
+$optionalThree: 1400px;
+$laptop: 1200px;
+$phoneLandscape: 768px;
+$phonePortrait: 572px;
+$phone: 400px;
+
+@mixin optionalThree {
+    @media (max-width: #{$optionalThree}){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{$laptop}){
+        @content;
+    }
+}
+
+@mixin phoneLandscape {
+    @media (max-width: #{$phoneLandscape}){
+        @content;
+    }
+}
+
+@mixin phonePortrait {
+    @media (max-width: #{$phonePortrait}){
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: #{$phone}){
+        @content;
+    }
+}
+
+.ski-school {
+    margin-top: 170px;
+    padding: 0 60px;
+
+    @include optionalThree {
+        padding: 0 40px;
+    }
+
+    @include laptop {
+        margin-top: 68px;
+    }
+
+    @include phoneLandscape {
+        padding: 0;
+    }
+}
+
+.ski-school__title {
+    
+    @include phonePortrait {
+        font-size: 32px;
+    }
+
+    @include phone {
+        font-size: 26px;
+        padding: 0 12px;
+    }
+}
+
+.accordion {
+    margin-top: 42px;
+
+    @include phoneLandscape {
+        margin-top: 20px;
+    }
+}
+
+.accordion__container {
+    border-top: 2px solid darken(white, 10%);
+    border-bottom: 2px solid darken(white, 10%);
+    width: 1180px;
+    margin: 0 auto;
+    transition: .2s;
+
+    @include optionalThree {
+        width: 95%;
+    }
+    
+    @include phonePortrait {
+        width: 90%;
+    }
+
+    .accordion--grouped & {
+
+        &:not(:first-child) {
+            border-top: 0;
+        }
+    }
+
+    &.is-active {
+
+        .accordion__content {
+            padding: 0 12px 20px 12px;
+        }
+
+        .accordion__title-container > i {
+            transform: rotate(180deg);
+        }
+
+        .accordion__title-container {
+            padding: 28px 12px;
+        }
+    }
+}
+
+.accordion__title-container {
+    padding: 20px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+    transition: .2s;
+
+    @include phone {
+        font-size: 14px;
+    }
+
+    & > i {
+        transition: .2s;
+    }
+}
+
+.accordion__title {
+    font-size: 18px;
+    line-height: 20px;
+
+    @include phoneLandscape {
+        font-size: 14px;
+    }
+}
+
+.accordion__content {
+    padding: 0 12px;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 17px;
+
+    @include phonePortrait {
+        font-size: 16px;
+    }
+}
+
+.ski-school__info {
+    width: 1180px;
+    margin: 40px auto 0 auto;
+    line-height: 24px;
+
+    @include optionalThree {
+        width: 95%;
+    }
+
+    @include phonePortrait {
+        width: 90%;
+    }
+    
+    a {
+        color: #2b95f3;
+    }
+}
+
+.ski-school__price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+    border-bottom: 2px solid #2b95f3;
+    font-size: 17px;
+
+    @include phone {
+        font-size: 15px;
+    }
+}
+
+.ski-school__price-title {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 24px;
+}
+
+.ski-school__box {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    background: #f8f8f8;
+    padding: 16px;
+    border-radius: 6px;
+    border-left: 3px solid #cbcbcb;
+
+    @include laptop {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.ski-school__box-image {
+    border-radius: 6px;
+    width: 300px;
+
+    @include phone {
+        width: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+$optionalFour: 927px;
+$phoneSmallOptional: 450px;
+
+@mixin optionalFour {
+    @media (max-width: #{$optionalFour}){
+        @content;
+    }
+}
+
+@mixin phoneSmallOptional {
+    @media (max-width: #{$phoneSmallOptional}){
+        @content;
+    }
+}
+
+.ski-school__gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.ski-school__gallery-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.ski-school__gallery-image-link {
+    max-width: calc(25% - 3px);
+    display: flex;
+
+    @include optionalFour {
+        max-width: calc(50% - 3px);
+    }
+
+    @include phoneSmallOptional {
+        max-width: 100%;
+    }
+}
+
+.ski-school__gallery-image {
+    max-width: 100%;
+    object-fit: cover;
+}

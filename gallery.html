@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aleksa Jukić">
+    <meta name="description" content="Ski škola Kopaonik - naučite skijanje i zabavite se. Darko Pantić - Učitelj skijanja i snowborda kao i licencirani Ski UPS instruktor. Rezervišite Vaš termin i naučite da skijate.">
+    <meta name="keywords" content="Skijanje, Kopaonik, Škola skijanja, Darko Pantić, Skije, Snowboard, Učitelj skijanja, Sneg, Naučite skijanje">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favIconSki.png">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Ski škola Kopaonik - Galerija</title>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <h3 class="loader__title">
+            Škola skijanja Kopaonik
+            <span class="loader__title-span">Darko Pantić - Instruktor skijanja</span>
+        </h3>
+        <div class="loader__ski-animation-container">
+            <div class="loader__snow-mountains-container"></div>
+            <img src="./assets/images/loaderSkiMan.png" class="loader__ski-image loader__ski-image--ski-man" alt="Ski Man"/>
+            <img src="./assets/images/loaderSkiTrack.png" class="loader__ski-image loader__ski-image--ski-track" alt="Ski Track"/>
+            <img src="./assets/images/finishFlag.png" class="loader__ski-image loader__ski-image--finish-flag" alt="Finish Flag"/>
+        </div>
+        <div class="loader__loading-bar-container">
+            <div class="loader__loading-bar">
+                <div class="loader__loading-bar-inner"></div>
+            </div>
+            <div class="loader__loading-bar-percentage"><span class="loader__loading-bar-percentage-value">0</span>%</div>
+        </div>
+    </div>
+
+    <!-- Contact overlay -->
+    <div class="contact-overlay">
+        <div class="contact-overlay__content">
+            <h3 class="contact-overlay__title">Kontakt</h3>
+            <i class="fa-solid fa-xmark contact-overlay__close"></i>
+            <div class="contact-overlay__info">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Jabučko Ravnište, Stara planina.
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    darkopantic@yahoo.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    062494220
+                </p>
+            </div>
+            <a href="tel:+381 62 494 220" class="contact-overlay__button the-button">
+                Pozovite nas
+                <i class="fa-solid fa-phone-flip"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Snowboard back to top -->
+    <i class="fa-solid fa-chevron-up back-to-top"></i>
+
+    <div id="swup" class="transition-fade">
+
+        <!-- Navigation -->
+        <div class="navigation-burger"></div>
+        <div class="navigation navigation--active">
+            <div class="navigation__left">
+                <a href="/">
+                    <img src="./assets/images/logo.png" alt="Darko Pantić Logo"/>
+                </a>
+            </div>
+            <div class="navigation__right">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="/snowStarsSkiSchool.html" class="navigation__list-link">Snows Stars Ski Škola</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist" data-no-swup>Škola Skijanja<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="first-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/startingSkiSchool.html" class="navigation__subslist-link">Početna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/primarySkiSchool.html" class="navigation__subslist-link">Osnovna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/advancedSkiSchool.html" class="navigation__subslist-link">Napredna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/expertSkiSchool.html" class="navigation__subslist-link">Ekspertska škola skijanja</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/snowboardSchool.html" class="navigation__list-link">Škola Snouborda</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist" data-no-swup>Skijaški koncept-ups<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="second-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/whatIsUPS.html" class="navigation__subslist-link">Šta se UPS-om postiže ?</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/preparation.html" class="navigation__subslist-link">Priprema za učiteljska zvanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/training.html" class="navigation__subslist-link">Trening</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/prices.html" class="navigation__subslist-link">Cenovnik</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/kopaonik.html" class="navigation__list-link">Kopaonik</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/gallery.html" class="navigation__list-link is-active">Galerija</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link navigation__list-link--icon navigation__list-link--contact"><i class="fa-solid fa-phone"></i></a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/" class="navigation__list-link navigation__list-link--icon"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ski-school">
+            <h2 class="ski-school__title">GALERIJA</h2>
+            <div class="heading-separator-container">
+                <div class="heading-separator">
+                    <u></u>
+                </div>
+            </div>
+
+            <div class="ski-school__info">
+                <div class="ski-school__gallery">
+                    <div class="ski-school__gallery-box">
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery1.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery1.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery2.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery2.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery8.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery8.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery11.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery11.webp"/></a>
+                    </div>
+                    <div class="ski-school__gallery-box">
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery5.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery5.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery6.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery6.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery7.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery7.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery3.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery3.webp"/></a>
+                    </div>
+                    <div class="ski-school__gallery-box">
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery9.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery9.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery20.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery20.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery4.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery4.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery12.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery12.webp"/></a>
+                    </div>
+                    <div class="ski-school__gallery-box">
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery13.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery13.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery14.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery14.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery15.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery15.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery16.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery16.webp"/></a>
+                    </div>
+                    <div class="ski-school__gallery-box">
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery17.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery17.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery18.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery18.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery19.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery19.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery10.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery10.webp"/></a>
+                    </div>
+                    <div class="ski-school__gallery-box">
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery21.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery21.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery22.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery22.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery23.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery23.webp"/></a>
+                        <a class="ski-school__gallery-image-link" href="./assets/images/gallery/gallery24.webp" data-lightbox="snow-stars-ski-school" data-title="Click the right half of the image to move forward." data-alt="Proba"><img class="ski-school__gallery-image" src="./assets/images/gallery/gallery24.webp"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__upper">
+                <p>Za sva pitanja ili nejasnoće budite slobodni da nas kontaktirate.</p>
+                <a href="tel:+381 62 494 220" class="footer__button the-button">
+                    Pozovite nas
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__main-container">
+                    <div class="footer__main-left-container">
+                        <h3>Socijalne Mreže</h3>
+                        <div class="footer__socials">
+                            <a href="https://www.instagram.com/darko.pantic.9619/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://ms-my.facebook.com/darkopanticskolaskijanja/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/vertigoooooo/videos?app=desktop&view=0&sort=dd&shelf_id=0" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__main-right-container">
+                        <h3>Kontakt Info</h3>
+                        <div class="footer__contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Jabučko Ravnište, Stara planina.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                darkopantic@yahoo.com
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                062494220
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; Copyright. 2022 - <span>Darko Pantić - UČITELJ SKIJANJA I SNOUBORDA</span></p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Swup link -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.14/swup.min.js'></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        lightbox.option({
+          'wrapAround': true,
+          'alwaysShowNavOnTouchDevices': true
+        })
+    </script>
+</body>
+</html>

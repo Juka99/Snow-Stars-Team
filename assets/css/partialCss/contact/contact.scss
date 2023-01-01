@@ -1,0 +1,79 @@
+$phoneSmallOptional: 450px;
+$phoneSmall: 370px;
+
+@mixin phoneSmallOptional {
+    @media (max-width: #{$phoneSmallOptional}){
+        @content;
+    }
+}
+
+@mixin phoneSmall {
+    @media (max-width: #{$phoneSmall}){
+        @content;
+    }
+}
+
+.contact-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: rgba(#141414, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    opacity: 0;
+    transform: scale(1.1);
+
+    &.is-active {
+        z-index: 1000;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.contact-overlay__content {
+    padding: 20px 32px 32px 32px;
+    border-radius: 6px;
+    background: white;
+    border-left: 4px solid #2b95f3;
+    max-height: 90vh;
+    min-width: 300px;
+    position: relative;
+
+    @include phoneSmall {
+        min-width: unset;
+        width: calc(100% - 60px);
+        padding: 20px 16px 32px 16px;
+    }
+}
+
+.contact-overlay__close {
+    position: absolute;
+    z-index: 1;
+    right: 32px;
+    top: 26px;
+    font-size: 24px;
+    cursor: pointer;
+
+    @include phoneSmall {
+        right: 20px;
+        top: 25px;
+    }
+}
+
+.contact-overlay__title {
+    font-size: 32px;
+    padding-bottom: 16px;
+
+    @include phoneSmallOptional {
+        font-size: 28px;
+    }
+}
+
+.contact-overlay__info {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

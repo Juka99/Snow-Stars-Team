@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aleksa Jukić">
+    <meta name="description" content="Ski škola Kopaonik - naučite skijanje i zabavite se. Darko Pantić - Učitelj skijanja i snowborda kao i licencirani Ski UPS instruktor. Rezervišite Vaš termin i naučite da skijate.">
+    <meta name="keywords" content="Skijanje, Kopaonik, Škola skijanja, Darko Pantić, Skije, Snowboard, Učitelj skijanja, Sneg, Naučite skijanje">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favIconSki.png">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Ski škola Kopaonik - Napredna Škola Skijanja</title>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <h3 class="loader__title">
+            Škola skijanja Kopaonik
+            <span class="loader__title-span">Darko Pantić - Instruktor skijanja</span>
+        </h3>
+        <div class="loader__ski-animation-container">
+            <div class="loader__snow-mountains-container"></div>
+            <img src="./assets/images/loaderSkiMan.png" class="loader__ski-image loader__ski-image--ski-man" alt="Ski Man"/>
+            <img src="./assets/images/loaderSkiTrack.png" class="loader__ski-image loader__ski-image--ski-track" alt="Ski Track"/>
+            <img src="./assets/images/finishFlag.png" class="loader__ski-image loader__ski-image--finish-flag" alt="Finish Flag"/>
+        </div>
+        <div class="loader__loading-bar-container">
+            <div class="loader__loading-bar">
+                <div class="loader__loading-bar-inner"></div>
+            </div>
+            <div class="loader__loading-bar-percentage"><span class="loader__loading-bar-percentage-value">0</span>%</div>
+        </div>
+    </div>
+
+    <!-- Contact overlay -->
+    <div class="contact-overlay">
+        <div class="contact-overlay__content">
+            <h3 class="contact-overlay__title">Kontakt</h3>
+            <i class="fa-solid fa-xmark contact-overlay__close"></i>
+            <div class="contact-overlay__info">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Jabučko Ravnište, Stara planina.
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    darkopantic@yahoo.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    062494220
+                </p>
+            </div>
+            <a href="tel:+381 62 494 220" class="contact-overlay__button the-button">
+                Pozovite nas
+                <i class="fa-solid fa-phone-flip"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Snowboard back to top -->
+    <i class="fa-solid fa-chevron-up back-to-top"></i>
+
+    <div id="swup" class="transition-fade">
+
+        <!-- Navigation -->
+        <div class="navigation-burger"></div>
+        <div class="navigation navigation--active">
+            <div class="navigation__left">
+                <a href="/">
+                    <img src="./assets/images/logo.png" alt="Darko Pantić Logo"/>
+                </a>
+            </div>
+            <div class="navigation__right">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="/snowStarsSkiSchool.html" class="navigation__list-link">Snows Stars Ski Škola</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist is-active" data-no-swup>Škola Skijanja<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="first-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/startingSkiSchool.html" class="navigation__subslist-link">Početna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/primarySkiSchool.html" class="navigation__subslist-link">Osnovna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/advancedSkiSchool.html" class="navigation__subslist-link is-active">Napredna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/expertSkiSchool.html" class="navigation__subslist-link">Ekspertska škola skijanja</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/snowboardSchool.html" class="navigation__list-link">Škola Snouborda</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist" data-no-swup>Skijaški koncept-ups<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="second-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/whatIsUPS.html" class="navigation__subslist-link">Šta se UPS-om postiže ?</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/preparation.html" class="navigation__subslist-link">Priprema za učiteljska zvanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/training.html" class="navigation__subslist-link">Trening</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/prices.html" class="navigation__subslist-link">Cenovnik</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/kopaonik.html" class="navigation__list-link">Kopaonik</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/gallery.html" class="navigation__list-link">Galerija</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link navigation__list-link--icon navigation__list-link--contact"><i class="fa-solid fa-phone"></i></a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/" class="navigation__list-link navigation__list-link--icon"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ski-school">
+            <h2 class="ski-school__title">Napredna Škola Skijanja</h2>
+            <div class="heading-separator-container">
+                <div class="heading-separator">
+                    <u></u>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__container">
+                    <div class="accordion__title-container">
+                        <h3 class="accordion__title">C NIVO - Napredna Škola Skijanja</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion__content">
+                        <p>U prethodnom B nivou smo dosta toga uradili. Na blagim plavim stazama smo sigurni, vozimo paralelno, gibamo se i koristimo skijaške štapove. Kontrolišemo sigurno brzinu i pravac kretanja.</p>
+                        <br/>
+                        <p>Ono što predstavlja izazov za polaznike je probijanje strminske barijere. Iako voze i vladaju skijama, kada dođu na strminu dolazi do blokade, ukočenosti nogu i pomjeranje težišta nazad. Tako da se suočavaju sa velikim izazovom u pripremnoj fazi zavoja, prelaznoj fazi i u fazi vođenja zaokreta.</p>
+                        <br/>
+                        <p>Upravo rešenje tog izazova nam  je prevashodni zadatak u ovoj fazi obuke, pomjeriti težište naprijed ka centru zaokreta na strmini u prelaznoj fazi zaokreta, a pravilno i sigurno voditi zaokret tokom faze zaokretanja. Svi segmenti tijela učestvuju u projekciji težišta tijela tokom zaokreta, ali kukovi i trup nose najviše težine i najvise utiču na projekciju težišta tijela u prostoru dok skijamo.</p>
+                        <br/>
+                        <p>Nije dovoljno da samo glavu gurnemo malo dole niz padinu, repovi skija će i dalje biti opterećeni i  imaćemo ozbiljnih problema prilikom faze  zaokretanja. Ono što radimo je da na blažoj padini izvedemo i pravilno usvojimo pravac opružanja i vođenje zavoja, a onda postepeno povećavamo strminu. Za uslove Kopaonika prekrasna padina za početno usvajanje ovog elementa u prethodnom B razredu je Pajino preslo, Mašinac potom centralni „crni“ Karaman Greben. Kada se polaznik pravilno giba i kontroliše skije na ovim padinama idemo na Sunčanu dolinu i Pančićev vrh.</p>
+                        <br/>
+                        <p>Znači postepeno pomjeramo brzinsku i strminsku barijeru. Neophodna je stalno osluškivati i imati povratne informacije od polaznika. Na osnovu onoga šta vidimo i saznamo od polaznika pravimo procjenu šta je realno i kojom dinamikom treba dalje da napredujemo. U svakom slučaju dok polaznik ne bude potpuno siguran u sebe, dok ne riješimo strah i ukočenost, to će usporavati napredak. Zbog toga vršimo stalni mix različitih strmina i nastojimo da čas uvijek završimo na blažim padinama gdje naš polaznik sigurno izvodi tražene elemente.</p>
+                        <br/>
+                        <p>Uslovi na skijalištu su jako značajni. Magla i niske temperature nam ne idu na ruku u radu. Za rad su najpovoljniji rani jutarnji termini kada na stazama nema mnogo skijaša i staze su ravne i bez leda. Mnogo skijaša na stazama, koji jure na sve strane ometaju rad i otežavaju usvajanje novih elemenata tehnike.</p>
+                        <br/>
+                        <p>Paralelni zaokret u širokom hodniku kombinovanom tehnikom je prva vrsta zaokreta koja treba da se usvoji na ovom nivou. Izvodi se srednjom brzinom u širokom hodniku na crvenim i crnim stazama sa upotrebom skijaških štapova.</p>
+                        <br/>
+                        <p>Paralelni zaokret u širokom hodniku ureznom tehnikom predstavlja zaokret gdje se tokom cijelog zaokreta ispoljava efekat geometrije skije, skije se tokom trajanja zaokreta paralelno  postavljene, a rubnici se urezuju u podlogu. U početnoj fazi zaokretanja minimalno je prednjačenje spoljašnje skije, a  nema bočnog otklizavanja skija tokom faze zaokretanja gdje  posle prelaska padne linije ureznom tehnikom vodimo  završnu fazu zavoja. U početnom dijelu zaokreta osim minimalnog  prednjačenja spoljne skije, promjenu pravca vršimo aktivacijom skočnog zgloba. Na ovom nivou tehnike je usaglašeno:lateralno opružanje, pregibanje, ritam, vođenje skija i upotreba skijaških štapova. Skije vozimo sigurno srednjom brzinom u širokom hodniku.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ski-school__info">
+                <div class="ski-school__box">
+                    <div>
+                        <p>Veliki je prelaz  između osnovne i napredne škole skijanja. To se prije svega ogleda u vrstama terena na kojima skijamo i brzinama kojima skijamo. Taj iskorak zahtjeva viši nivo tehnike.</p>
+                        <br/>
+                        <p>U naprednoj školi skijanja skijamo na svim stazama i na svim strminama. Nastavićemo da neke elemente uvježbavamo na blažim plavim stazama, odnosno pravićemo stalni mix različitih strmina i brzina za izvedbu elemenata škole skijanja kako bi došlo do pravilnog usvajanja istih. Kako bi polaznika vodili kroz proces bezbjedno, sigurno bez stresa i stalno pomjerali granicu njegovog skijanja.</p>
+                    </div>
+                    <img class="ski-school__box-image" src="./assets/images/manSkiingDownTheHill.webp" alt="Kids in ski gear"/>
+                </div>
+                <br/>
+                <p>Usvajanjem i oslobađanjem od straha da na vecoj strmini uradimo pravilan pravac opružanja i projektujemo naše težište naprijed i u novi pravac kretanja, zadovoljavamo prvi uslov da smo zreli za prelazak u naprednu školu skijanja.</p>
+                <br/>
+                <p>Takođe skijamo brže i agresivnije, osjeti se da nemamo straha od brzine i strmine, sigurniji smo. Da me pogrešno ne razumijete, skijamo primjereno uslovima na stazi, „ne divljamo“, ali se dešava pomjeranje brzinske i strminske barijere kod naših polaznika. </p>
+                <br/>
+                <div class="ski-school__box">
+                    <img class="ski-school__box-image" src="./assets/images/manSkiingDownTheHill__two.webp" alt="Ski teacher with kids"/>
+                    <div>
+                        <p>Tehnički na ovom nivou škole skijanja skijamo ureznom i kombinovanom tehnikom, u širokom hodniku, srednjim brzinama na svim vrstama staza. Osjećamo skije i podlogu i postavljajući skije pod različitim uglom ka podlozi u početnoj- pripremnoj  fazi zavoja i načinom vođenja u završnoj-fazi vođenja zavoja kreiramo vrstu zavoja kojom vozimo. Pri tome vodimo računa o tajmingu, usklađenosti i redosljedu pokreta, te međusobnom odnosu segmenata tijela tokom zavoja, dobijamo na kraju paralelne zavoje u širokom hodniku ureznom tehnikom ili paralelne zavoje u širokom hodniku kombinovanom tehnikom.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__upper">
+                <p>Za sva pitanja ili nejasnoće budite slobodni da nas kontaktirate.</p>
+                <a href="tel:+381 62 494 220" class="footer__button the-button">
+                    Pozovite nas
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__main-container">
+                    <div class="footer__main-left-container">
+                        <h3>Socijalne Mreže</h3>
+                        <div class="footer__socials">
+                            <a href="https://www.instagram.com/darko.pantic.9619/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://ms-my.facebook.com/darkopanticskolaskijanja/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/vertigoooooo/videos?app=desktop&view=0&sort=dd&shelf_id=0" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__main-right-container">
+                        <h3>Kontakt Info</h3>
+                        <div class="footer__contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Jabučko Ravnište, Stara planina.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                darkopantic@yahoo.com
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                062494220
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; Copyright. 2022 - <span>Darko Pantić - UČITELJ SKIJANJA I SNOUBORDA</span></p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Swup link -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.14/swup.min.js'></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

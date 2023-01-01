@@ -1,0 +1,225 @@
+.ski-school {
+  margin-top: 170px;
+  padding: 0 60px;
+}
+
+@media (max-width: 1400px) {
+  .ski-school {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ski-school {
+    margin-top: 68px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ski-school {
+    padding: 0;
+  }
+}
+
+@media (max-width: 572px) {
+  .ski-school__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ski-school__title {
+    font-size: 26px;
+    padding: 0 12px;
+  }
+}
+
+.accordion {
+  margin-top: 42px;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    margin-top: 20px;
+  }
+}
+
+.accordion__container {
+  border-top: 2px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+  width: 1180px;
+  margin: 0 auto;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media (max-width: 1400px) {
+  .accordion__container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 572px) {
+  .accordion__container {
+    width: 90%;
+  }
+}
+
+.accordion--grouped .accordion__container:not(:first-child) {
+  border-top: 0;
+}
+
+.accordion__container.is-active .accordion__content {
+  padding: 0 12px 20px 12px;
+}
+
+.accordion__container.is-active .accordion__title-container > i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion__container.is-active .accordion__title-container {
+  padding: 28px 12px;
+}
+
+.accordion__title-container {
+  padding: 20px 12px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media (max-width: 400px) {
+  .accordion__title-container {
+    font-size: 14px;
+  }
+}
+
+.accordion__title-container > i {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.accordion__title {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .accordion__title {
+    font-size: 14px;
+  }
+}
+
+.accordion__content {
+  padding: 0 12px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: .2s;
+  transition: .2s;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+@media (max-width: 572px) {
+  .accordion__content {
+    font-size: 16px;
+  }
+}
+
+.ski-school__info {
+  width: 1180px;
+  margin: 40px auto 0 auto;
+  line-height: 24px;
+}
+
+@media (max-width: 1400px) {
+  .ski-school__info {
+    width: 95%;
+  }
+}
+
+@media (max-width: 572px) {
+  .ski-school__info {
+    width: 90%;
+  }
+}
+
+.ski-school__info a {
+  color: #2b95f3;
+}
+
+.ski-school__price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 2px solid #2b95f3;
+  font-size: 17px;
+}
+
+@media (max-width: 400px) {
+  .ski-school__price-box {
+    font-size: 15px;
+  }
+}
+
+.ski-school__price-title {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 24px;
+}
+
+.ski-school__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 36px;
+  background: #f8f8f8;
+  padding: 16px;
+  border-radius: 6px;
+  border-left: 3px solid #cbcbcb;
+}
+
+@media (max-width: 1200px) {
+  .ski-school__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.ski-school__box-image {
+  border-radius: 6px;
+  width: 300px;
+}
+
+@media (max-width: 400px) {
+  .ski-school__box-image {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=skiSchool.css.map */

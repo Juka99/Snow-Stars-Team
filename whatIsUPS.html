@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aleksa Jukić">
+    <meta name="description" content="Ski škola Kopaonik - naučite skijanje i zabavite se. Darko Pantić - Učitelj skijanja i snowborda kao i licencirani Ski UPS instruktor. Rezervišite Vaš termin i naučite da skijate.">
+    <meta name="keywords" content="Skijanje, Kopaonik, Škola skijanja, Darko Pantić, Skije, Snowboard, Učitelj skijanja, Sneg, Naučite skijanje">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favIconSki.png">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Ski škola Kopaonik - Šta se UPS-om postiže ?</title>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <h3 class="loader__title">
+            Škola skijanja Kopaonik
+            <span class="loader__title-span">Darko Pantić - Instruktor skijanja</span>
+        </h3>
+        <div class="loader__ski-animation-container">
+            <div class="loader__snow-mountains-container"></div>
+            <img src="./assets/images/loaderSkiMan.png" class="loader__ski-image loader__ski-image--ski-man" alt="Ski Man"/>
+            <img src="./assets/images/loaderSkiTrack.png" class="loader__ski-image loader__ski-image--ski-track" alt="Ski Track"/>
+            <img src="./assets/images/finishFlag.png" class="loader__ski-image loader__ski-image--finish-flag" alt="Finish Flag"/>
+        </div>
+        <div class="loader__loading-bar-container">
+            <div class="loader__loading-bar">
+                <div class="loader__loading-bar-inner"></div>
+            </div>
+            <div class="loader__loading-bar-percentage"><span class="loader__loading-bar-percentage-value">0</span>%</div>
+        </div>
+    </div>
+
+    <!-- Contact overlay -->
+    <div class="contact-overlay">
+        <div class="contact-overlay__content">
+            <h3 class="contact-overlay__title">Kontakt</h3>
+            <i class="fa-solid fa-xmark contact-overlay__close"></i>
+            <div class="contact-overlay__info">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Jabučko Ravnište, Stara planina.
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    darkopantic@yahoo.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    062494220
+                </p>
+            </div>
+            <a href="tel:+381 62 494 220" class="contact-overlay__button the-button">
+                Pozovite nas
+                <i class="fa-solid fa-phone-flip"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Snowboard back to top -->
+    <i class="fa-solid fa-chevron-up back-to-top"></i>
+
+    <div id="swup" class="transition-fade">
+
+        <!-- Navigation -->
+        <div class="navigation-burger"></div>
+        <div class="navigation">
+            <div class="navigation__left">
+                <a href="/">
+                    <img src="./assets/images/logo.png" alt="Darko Pantić Logo"/>
+                </a>
+            </div>
+            <div class="navigation__right">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="/snowStarsSkiSchool.html" class="navigation__list-link">Snows Stars Ski Škola</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist" data-no-swup>Škola Skijanja<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="first-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/startingSkiSchool.html" class="navigation__subslist-link">Početna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/primarySkiSchool.html" class="navigation__subslist-link">Osnovna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/advancedSkiSchool.html" class="navigation__subslist-link">Napredna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/expertSkiSchool.html" class="navigation__subslist-link">Ekspertska škola skijanja</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/snowboardSchool.html" class="navigation__list-link">Škola Snouborda</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist is-active" data-no-swup>Skijaški koncept-ups<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="second-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/whatIsUPS.html" class="navigation__subslist-link is-active">Šta se UPS-om postiže ?</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/preparation.html" class="navigation__subslist-link">Priprema za učiteljska zvanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/training.html" class="navigation__subslist-link">Trening</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/prices.html" class="navigation__subslist-link">Cenovnik</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/kopaonik.html" class="navigation__list-link">Kopaonik</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/gallery.html" class="navigation__list-link">Galerija</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link navigation__list-link--icon navigation__list-link--contact"><i class="fa-solid fa-phone"></i></a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/" class="navigation__list-link navigation__list-link--icon"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="snows-starts-team-start snows-starts-team-start--ups">
+            <div class="snows-starts-team-start__container">
+                <h2 class="snows-starts-team-start__title">SKIJAŠKI KONCEPT- UPS</h2>
+                <div class="heading-separator-container">
+                    <div class="heading-separator">
+                        <u></u>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="custom-shape-divider-bottom-1672058429">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="snows-starts-team-info snows-starts-team-info--ups">
+            <h3 class="snows-starts-team-info__title">Šta je UPS?</h3>
+
+            <div class="ski-school__info">
+                <div class="ski-school__box">
+                    <div>
+                        <p>Sistem su  nazvali UPS koncept , ili nastavni sistem postepenog produžavanja skija (Učenje sa Produžavanjem Skija- UPS). Počinje se na skijama dužine 90 cm, prelazeći na skije dužine 125cm, i završavajući na skijama dužine koju vi koristite.</p>
+                        <br/>
+                        <p>Pitaćete zašto?</p>
+                        <br/>
+                        <p>Savremena kombinacija tzv. zarezne ili rotacione tehnike zahtijeva nove načine učenja, brže, direktnije i efikasnije sisteme koji bi privukli više ljubitelja bijelih staza i omogućili Vam da iskoristite prednosti koje Vam nove skije pružaju. Zbog toga su one i napravljene!</p>
+                    </div>
+                    <img class="ski-school__box-image" src="./assets/images/standingOnSkiboard.webp" alt="People standing on ski board"/>
+                </div>
+                <br/>
+                <p>Od 2005. godine UPS koncept je posao dio skijaškog nastavnog programa u mnogim ski školama i ski centrima širom svijeta. Uključujući SAD, Rusiju, Švajcarsku...itd</p>
+                <br/>
+                <p>Normalno je da se pitate da li je UPS za mene?</p>
+                <br/>
+                <div class="ski-school__box">
+                    <img class="ski-school__box-image" src="./assets/images/slidingOnSnow.webp" alt="Ski man sliding on snow"/>
+                    <div>
+                        <p>UPS je za sve one koji žele da brzo, jednostavno i bezbjedno nauče skijate ili da izvrše korekciju svoje dosadašnje tehnike skijanja.</p>
+                        <br/>
+                        <p>Za sve one koji nemaju vremena da prolaze sve faze i stepenice klasične obuke.</p>
+                        <br/>
+                        <p>Koji žele izazov, imaju dobar kondicioni i motorički status. Koji se ne plaše izazova.</p>
+                        <br/>
+                        <p>Do sada je UPS koncept impresionirao hiljade ski fanova i ne vidim razloga zašto ne bi i Vas?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snows-starts-team-info snows-starts-team-info--ups">
+            <h3 class="snows-starts-team-info__title">Šta se UPS-om postiže?</h3>
+
+            <div class="ski-school__info">
+                <p>UPS metod uvodi različite metode učenja bez teškoće i napora, igru i zabavu- sve u želji da se otkrije nepoznato svakom pojedincu u što kraćem vremenskom roku. Kratke UPS skije su izuzetno pogodne za učenje bez prethodnog vježbanja i za usavršavanje.</p>
+                <br/>
+                <p>Kratke skijice od 90 cm nam stalno daju povratnu informaciju jer, plešu i trepere, kad god nisu pravilno postavljene na rubnike. Samim time nam olakšavaju i ubrzavaju učenje i usavršavanje tehnike skijanja.</p>
+                <br/>
+                <p>One primoravaju skijaša da postigne:</p>
+                <br/>
+                <p>1. Otvoren skijaški stav- pruža skijašu mogućnost da ima bolji oslonac i stabilnost. Takav skijaški stav je karakterističan u oba slučaja- i za prve korake na snegu i za vrhunske skijaške tehnike.</p>
+                <br/>
+                <p>2. Uravnotežen i centriran položaj tijela sa ski cipelama na sredini skija, omogućava najbolji skijaški učinak.</p>
+                <br/>
+                <p>3. Vodjenje skija na rubnicima obe skije ( zarezna tehnika) za pojedinačna dostignuca skijaša u zavisnosti od njegovog/ njenog znanja, vještine, složenosti staze i opreme (radijus skija).</p>
+                <br/>
+                <p>4. Tijelo prati i održava osu ramena u položaju koji prati pravac skijanja (ili težište skijaša) u svim fazama zaokreta. Pri većim brzinama štap je samo naznačen. Više  se ne zahtjeva vertikalno opružanje.</p>
+                <br/>
+                <p>5. Čak i pri manjim brzinama štap je suvišan. Ako ima potrebe za njim, do toga dolazimo na kraju pripreme  za zaokret.</p>
+                <br/>
+                <p>6. Brzi pokret koljena i skočnog zgloba (obaranje stopala) u pravcu novog zaokreta.</p>
+                <br/>
+                <p>7. Veće naginjanje tokom zaokreta.</p>
+                <br/>
+                <p>8. Niže težište. Manje vertikalnog, a više lateralnog (bočnog) gibanja.</p>
+                <br/>
+                <p>9. Povijena kičma u "mačka poziciju" za bolju kontrolu skija i bolje iskorištenje refleksa.</p>
+                <br/>
+                <p>10. Neprekidni skije - snijeg kontakt</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__upper">
+                <p>Za sva pitanja ili nejasnoće budite slobodni da nas kontaktirate.</p>
+                <a href="tel:+381 62 494 220" class="footer__button the-button">
+                    Pozovite nas
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__main-container">
+                    <div class="footer__main-left-container">
+                        <h3>Socijalne Mreže</h3>
+                        <div class="footer__socials">
+                            <a href="https://www.instagram.com/darko.pantic.9619/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://ms-my.facebook.com/darkopanticskolaskijanja/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/vertigoooooo/videos?app=desktop&view=0&sort=dd&shelf_id=0" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__main-right-container">
+                        <h3>Kontakt Info</h3>
+                        <div class="footer__contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Jabučko Ravnište, Stara planina.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                darkopantic@yahoo.com
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                062494220
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; Copyright. 2022 - <span>Darko Pantić - UČITELJ SKIJANJA I SNOUBORDA</span></p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Swup link -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.14/swup.min.js'></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

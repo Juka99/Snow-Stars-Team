@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aleksa Jukić">
+    <meta name="description" content="Ski škola Kopaonik - naučite skijanje i zabavite se. Darko Pantić - Učitelj skijanja i snowborda kao i licencirani Ski UPS instruktor. Rezervišite Vaš termin i naučite da skijate.">
+    <meta name="keywords" content="Skijanje, Kopaonik, Škola skijanja, Darko Pantić, Skije, Snowboard, Učitelj skijanja, Sneg, Naučite skijanje">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favIconSki.png">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Ski škola Kopaonik - Kopaonik</title>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <h3 class="loader__title">
+            Škola skijanja Kopaonik
+            <span class="loader__title-span">Darko Pantić - Instruktor skijanja</span>
+        </h3>
+        <div class="loader__ski-animation-container">
+            <div class="loader__snow-mountains-container"></div>
+            <img src="./assets/images/loaderSkiMan.png" class="loader__ski-image loader__ski-image--ski-man" alt="Ski Man"/>
+            <img src="./assets/images/loaderSkiTrack.png" class="loader__ski-image loader__ski-image--ski-track" alt="Ski Track"/>
+            <img src="./assets/images/finishFlag.png" class="loader__ski-image loader__ski-image--finish-flag" alt="Finish Flag"/>
+        </div>
+        <div class="loader__loading-bar-container">
+            <div class="loader__loading-bar">
+                <div class="loader__loading-bar-inner"></div>
+            </div>
+            <div class="loader__loading-bar-percentage"><span class="loader__loading-bar-percentage-value">0</span>%</div>
+        </div>
+    </div>
+
+    <!-- Contact overlay -->
+    <div class="contact-overlay">
+        <div class="contact-overlay__content">
+            <h3 class="contact-overlay__title">Kontakt</h3>
+            <i class="fa-solid fa-xmark contact-overlay__close"></i>
+            <div class="contact-overlay__info">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Jabučko Ravnište, Stara planina.
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    darkopantic@yahoo.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    062494220
+                </p>
+            </div>
+            <a href="tel:+381 62 494 220" class="contact-overlay__button the-button">
+                Pozovite nas
+                <i class="fa-solid fa-phone-flip"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Snowboard back to top -->
+    <i class="fa-solid fa-chevron-up back-to-top"></i>
+
+    <div id="swup" class="transition-fade">
+
+        <!-- Navigation -->
+        <div class="navigation-burger"></div>
+        <div class="navigation">
+            <div class="navigation__left">
+                <a href="/">
+                    <img src="./assets/images/logo.png" alt="Darko Pantić Logo"/>
+                </a>
+            </div>
+            <div class="navigation__right">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="/snowStarsSkiSchool.html" class="navigation__list-link">Snows Stars Ski Škola</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist" data-no-swup>Škola Skijanja<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="first-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/startingSkiSchool.html" class="navigation__subslist-link">Početna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/primarySkiSchool.html" class="navigation__subslist-link">Osnovna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/advancedSkiSchool.html" class="navigation__subslist-link">Napredna škola skijanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/expertSkiSchool.html" class="navigation__subslist-link">Ekspertska škola skijanja</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/snowboardSchool.html" class="navigation__list-link">Škola Snouborda</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__list-link navigation__list-link--has-sublist" data-no-swup>Skijaški koncept-ups<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="navigation__sublist" id="second-sublist">
+                            <li class="navigation__subslist-item">
+                                <a href="/whatIsUPS.html" class="navigation__subslist-link">Šta se UPS-om postiže ?</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/preparation.html" class="navigation__subslist-link">Priprema za učiteljska zvanja</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/training.html" class="navigation__subslist-link">Trening</a>
+                            </li>
+                            <li class="navigation__subslist-item">
+                                <a href="/prices.html" class="navigation__subslist-link">Cenovnik</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/kopaonik.html" class="navigation__list-link is-active">Kopaonik</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/gallery.html" class="navigation__list-link">Galerija</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link navigation__list-link--icon navigation__list-link--contact"><i class="fa-solid fa-phone"></i></a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/" class="navigation__list-link navigation__list-link--icon"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="snows-starts-team-start snows-starts-team-start--kopaonik">
+            <div class="snows-starts-team-start__container">
+                <h2 class="snows-starts-team-start__title">KOPAONIK</h2>
+                <div class="heading-separator-container">
+                    <div class="heading-separator">
+                        <u></u>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="custom-shape-divider-bottom-1672058429">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="snows-starts-team-info snows-starts-team-info--kopaonik">
+            <div class="ski-school__info">
+                <p>Ne bih ovde da pišem o Nacionalnom parku Kopaonik, niti da prepisujem podatke sa sajta Skijališta Srbije o broju i dužini staza na Kopaoniku. Pisaću o svome viđenju ovog skijališta koje po meni ima kadrove, prirodne i prostorne resurse da postane pravi i istinski centar za obuku skijaša. Ne samo regionalni nego i svjetski lider u toj oblasti. Hoćemo i možemo da pružimo vrhunsku uslugu svim zaljubljenicima zimskih čarolija.</p>
+                <br/>
+                <p>Ono što mnogi smatraju minusom Kopaonika su dužine staza. Istovremeno se postavlja pitanje, ko može da skija duže staze, odnoso koliko procentualno skijaša dolazi  kondiciono spremno da može bez pauze da skija 3-10 km?</p>
+                <br/>
+                <div class="ski-school__box">
+                    <div>
+                        <p>Po mojim dosadašnjim iskustvima vrlo mali broj. Većina turista koji dođu na skijanje su kondiciono nespremni, direktno iz kancelarije. Vrlo malo njih redovno vježba ili bar pješači, odnosno u svakodnevnom ritmu života ide stepenicama umjesto liftom. Način života i naši svakodnevni obrasci ponašanja i odnosa nas prema nama samima uzimaju danak. Strašno je da primjećujem osjetan pad kondicionog i motoričkog statusa kod djece. Popularne kućne pomoćnice u vidu mobilnih telefona, tableta i računara su istisnule nekadašnja zajednička dječija igranja i jurcanja napolju.</p>
+                        <br/>
+                        <p>Djeca provode previše vremena buljeći u ekrane. Kondiciono i motorički postaju sve inferiorniji i onda skijanje i bordanje umjesto zabave i radosti postaje mora, jer ne mogu normalno da potrče, poskoče. Jasno je da za sve koji su drastično smanjili iskonsku potrebu za kretanjem i fizičkom aktivnosti, nošenje pancerica i kretanje u njima postaje veliki i teško dostižni izazov.</p>
+                    </div>
+                    <img class="ski-school__box-image" src="./assets/images/kopaonik__two.webp" alt="Kids in ski gear"/>
+                </div>
+                <br/>
+                <p>Tu je prednost Kopaonika, njegovih poligona i plavih-blagih staza. Za mene onaj ko zna da hoda i ima normalan motorički i kondicioni status na Kopaoniku za 5-6 sati nastave može da skija plave staze. U praksi to znači da se krene sa navikavanjem na skije i opremu na ravnom i već nakon prvih pola sata motorički inteligentniji i kondiciono spremniji su završili sa bebi vrtićem. Nakon toga slijedi ski lift Mašinac, koji se uspješno savlada u narednih sat ili dva. Tada polaznik uspješni kontroliše brzinu, mjenja pravac i može samostalno da se zaustavi u svakom trenutku. Sledeća stepenica je Karaman greben ili ski lift Krst, koji se isto tako savladaju za sat ili dva nastave. Znači početna i osnovna škola skijanja na Kopaoniku se može završiti za 5-6h nastave i polaznik posle toga samostalno vozi već navedene plave staze, ali i sve ostale plave staze na Kopaoniku kojih nije mali broj.</p>
+                <br/>
+                <div class="ski-school__box">
+                    <img class="ski-school__box-image" src="./assets/images/kopaonik__three.webp" alt="Kids in ski gear"/>
+                    <div>
+                        <p>Prekrasno je što smo ove godine dobili još jedan ski poligon iznad Mašinca, nadam se da će se ta dinamika nastaviti i da ljudi koji vode skijalište prepoznaju značaj poligona za obuku u skijanju. Mnogo znači da su početnici odvojeni od ostalih skijaša i sa aspekta bezbjednosti, ali i sa aspekta brzine napredovanja u obuci skijanju. Trebaju nam poligoni da privučemo još više početnika, da ne čekamo dugo u redu, da budemo bolji i efikasniji. Samim time da budemo bolje pozicionirani kao ski destinacija za učenje skijanja.</p>
+                        <br/>
+                        <p>U Snow Stars ski školi većina ski učitelja su profesori fizičke kulture. Imamo kvalitetne kadrove, znamo i hoćemo da radimo i da budemo pravi i istinski ambasadori Kopaonika i Srbije. Vjerujem da će rukovodstvo Ski centra Kopaonik u buduće više i bolje sarađivati sa ski učiteljima, jer mi smo jedini od uslužnog osoblja centra koji se stalno i neposredno druže sa gostima i na taj način imamo uvid i prave informacije iz prve ruke, šta njegovo Veličanstvo gost želi da bi uživao i trajno se vezao za ovu našu ski destinaciju.</p>
+                    </div>
+                </div>
+                <br/>
+                <p>Za one koji žele više, koji hoće da skijaju i uživaju u skijanju i bordanju u inostranstvu Kopaonik je prekrasan poligon. Ima raznovrsnost staza i ko može da na Kopaoniku sa uživanjem, bez problema vozi sve staze, spreman je da uspješno skija borda bilo gdje u svijetu.</p>
+                <br/>
+                <p>Dodjite na Kopaonik da naučite da skijajte, a potom skijajte gdje god poželite.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__upper">
+                <p>Za sva pitanja ili nejasnoće budite slobodni da nas kontaktirate.</p>
+                <a href="tel:+381 62 494 220" class="footer__button the-button">
+                    Pozovite nas
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__main-container">
+                    <div class="footer__main-left-container">
+                        <h3>Socijalne Mreže</h3>
+                        <div class="footer__socials">
+                            <a href="https://www.instagram.com/darko.pantic.9619/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://ms-my.facebook.com/darkopanticskolaskijanja/" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/vertigoooooo/videos?app=desktop&view=0&sort=dd&shelf_id=0" class="footer__social-link" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__main-right-container">
+                        <h3>Kontakt Info</h3>
+                        <div class="footer__contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Jabučko Ravnište, Stara planina.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                darkopantic@yahoo.com
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                062494220
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; Copyright. 2022 - <span>Darko Pantić - UČITELJ SKIJANJA I SNOUBORDA</span></p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Swup link -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.14/swup.min.js'></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+$optionalThree: 1400px;
+$laptop: 1200px;
+$phoneLandscape: 768px;
+$phonePortrait: 572px;
+
+@mixin laptop {
+    @media (max-width: #{$laptop}){
+        @content;
+    }
+}
+
+@mixin phoneLandscape {
+    @media (max-width: #{$phoneLandscape}){
+        @content;
+    }
+}
+
+@mixin phonePortrait {
+    @media (max-width: #{$phonePortrait}){
+        @content;
+    }
+}
+
+@mixin optionalThree {
+    @media (max-width: #{$optionalThree}){
+        @content;
+    }
+}
+
+.snows-starts-team-start {
+    width: 100%;
+    height: 70vh;
+    background: url('../../../images/peopleInSkiGear.webp');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &.snows-starts-team-start--snowboard-school {
+        background: url('../../../images/snowHillLarge.webp');
+    }
+
+    &.snows-starts-team-start--ups {
+        background: url('../../../images/upsCover.webp');
+    }
+
+    &.snows-starts-team-start--kopaonik {
+        background: url('../../../images/kopaonik.webp');
+        background-position: center bottom;
+    }
+}
+
+.snows-starts-team-start__container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.snows-starts-team-start__title {
+    font-size: 48px;
+    color: white;
+
+    @include phonePortrait {
+        padding: 0 12px;
+        font-size: 40px;
+    }
+}
+
+.snows-starts-team-info {
+    padding: 48px 120px 0 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 700;
+
+    @include laptop {
+        padding: 48px 60px 0 60px;
+    }
+
+    @include phoneLandscape {
+        padding: 48px 20px 0 20px;
+    }
+
+    &.snows-starts-team-info--snowboard-school {
+
+        @include phonePortrait {
+            padding: 48px 0 0 0;
+        }
+
+        .accordion {
+            margin: 0;
+        }
+    }
+
+    &.snows-starts-team-info--ups,
+    &.snows-starts-team-info--kopaonik {
+        
+        .ski-school__info {
+            margin-top: 0;
+        }
+    }
+
+    .snows-starts-team-info__title {
+        text-align: center;
+        font-size: 38px;
+        padding-bottom: 24px;
+    }
+
+    .snows-starts-team-info__box:last-child {
+        
+        @include optionalThree {
+            flex-direction: column;
+        }
+    }
+
+    .snows-starts-team-info__box {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding: 16px;
+        background: #f8f8f8;
+        border-radius: 6px;
+        margin-top: 0;
+        border-left: 3px solid #cbcbcb;
+
+        @include optionalThree {
+            flex-direction: column;
+        }
+
+        img {
+            width: 400px;
+            border-radius: 6px;
+
+            @include phoneLandscape {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.custom-shape-divider-bottom-1672058429 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672058429 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1672058429 .shape-fill {
+    fill: #FFFFFF;
+}

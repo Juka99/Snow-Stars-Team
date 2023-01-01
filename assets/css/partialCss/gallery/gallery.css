@@ -1,0 +1,46 @@
+.ski-school__gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+
+.ski-school__gallery-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3px;
+}
+
+.ski-school__gallery-image-link {
+  max-width: calc(25% - 3px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 927px) {
+  .ski-school__gallery-image-link {
+    max-width: calc(50% - 3px);
+  }
+}
+
+@media (max-width: 450px) {
+  .ski-school__gallery-image-link {
+    max-width: 100%;
+  }
+}
+
+.ski-school__gallery-image {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=gallery.css.map */

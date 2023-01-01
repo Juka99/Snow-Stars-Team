@@ -1,0 +1,372 @@
+$optionalZero: 1920px;
+$optionalOne: 1790px;
+$optionalTwo: 1590px;
+$optionalThree: 1400px;
+$laptop: 1200px;
+
+@mixin optionalZero {
+    @media (max-width: #{$optionalZero}){
+        @content;
+    }
+}
+
+@mixin optionalOne {
+    @media (max-width: #{$optionalOne}){
+        @content;
+    }
+}
+
+@mixin optionalTwo {
+    @media (max-width: #{$optionalTwo}){
+        @content;
+    }
+}
+
+
+@mixin optionalThree {
+    @media (max-width: #{$optionalThree}){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{$laptop}){
+        @content;
+    }
+}
+
+.navigation-burger {
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+
+    @include laptop {
+        display: block;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 4px;
+        background: #2b95f3;
+        border-radius: 4px;
+        transition: .2s;
+    }
+
+    &::after {
+        margin-top: 8px;
+    }
+
+    &.is-active {
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+            margin-top: -4px;
+        }
+    }
+}
+
+.navigation {
+    background: transparent;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 140px;
+    padding: 16px 0;
+    transition: .2s;
+
+    @include optionalZero {
+        justify-content: unset;
+    }
+
+    @include optionalOne {
+        gap: 100px;
+    }
+
+    @include optionalTwo {
+        gap: 80px;
+    }
+
+    @include optionalThree {
+        gap: 52px;
+    }
+
+    @include laptop {
+        width: 320px;
+        top: 0;
+        bottom: 0;
+        background: white;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 68px 0 36px 0;
+        transform: translateX(-320px);
+    }
+
+    &.is-active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    &.is-detached,
+    &.navigation--active {
+        background: white;
+        box-shadow: 0px -4px 9px #141414;
+
+        .navigation__list-link {
+            color: #141414;
+
+            &:hover {
+                color: #2b95f3;
+            }
+
+            &.is-active {
+                color: #2b95f3;
+            }
+        }
+
+        .navigation__left {
+            
+            img {
+                width: 90px;
+
+                @include laptop {
+                    width: 130px;
+                }
+            }
+        }
+        
+        .navigation__sublist {
+            box-shadow: 1px 1px 6px #141414;
+        }
+    }
+}
+
+.navigation__left {
+    margin-left: 80px;
+
+    @include optionalTwo {
+        margin-left: 40px;
+    }
+
+    @include optionalThree {
+        margin-left: 28px;
+    }
+
+    @include laptop {
+        margin-top: 40px;
+    }
+
+    img {
+        width: 130px;
+        transition: .2s;
+    }
+}
+
+.navigation__right {
+    margin-right: 80px;
+
+    @include optionalTwo {
+        margin-right: 0;
+    }
+}
+
+.navigation__list {
+    display: flex;
+    gap: 66px;
+    list-style-type: none;
+
+    @include optionalOne {
+        gap: 43px;
+    }
+
+    @include optionalTwo {
+        gap: 37px;
+    }
+
+    @include optionalThree {
+        gap: 22px;
+    }
+
+    @include laptop {
+        gap: 26px;
+        flex-direction: column;
+    }
+}
+
+.navigation__list-item {
+    position: relative;
+}
+
+.navigation__list-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: .2s;
+    position: relative;
+    padding: 16px 4px;
+
+    @include optionalTwo {
+        font-size: 17px;
+    }
+
+    @include optionalThree {
+        font-size: 16px;
+    }
+
+    @include laptop {
+        color: #141414;
+        padding: 4px;
+
+        &:hover {
+            color: #2b95f3;
+        }
+    }
+
+    &:hover + .navigation__sublist {
+        opacity: 1;
+    }
+
+    &:hover {
+        color: #2b95f3;
+    }
+
+    &.is-active {
+        color: #2b95f3;
+    }
+}
+
+.navigation__list-link--icon {
+    
+    @include laptop {
+        font-size: 22px;
+    }
+}
+
+.navigation__list-link--has-sublist {
+    position: relative;
+    padding-right: 28px;
+    cursor: pointer;
+
+    @include laptop {
+        padding: 16px 28px 16px 4px;
+    }
+
+    i {
+        position: absolute;
+        right: -2px;
+        pointer-events: none;
+    }
+}
+
+.navigation__list-link:not(.navigation__list-link--has-sublist) {
+
+    &:hover {
+        &::before {
+            width: calc(100% - 8px);
+        }
+    }
+
+    &.is-active {
+        &::before {
+            width: calc(100% - 8px);
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background: #2b95f3;
+        bottom: 4px;
+        transition: .2s;
+
+        @include laptop {
+            bottom: -8px;
+        }
+    }
+}
+
+.navigation__sublist {
+    position: absolute;
+    left: 50%;
+    top: 38px;
+    transform: translateX(-50%);
+    width: 120%;
+    background-color: white;
+    border-radius: 4px;
+    list-style-type: none;
+    transition: .2s;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    border-left: 8px solid #2b95f3;
+
+    @include laptop {
+        background: white;
+        z-index: 998;
+        top: 34px;
+        box-shadow: 1px 1px 6px #141414;
+    }
+}
+
+#first-sublist {
+    width: 150%;
+
+    &:hover {
+        opacity: 1;
+        height: 172px !important;
+
+        @include laptop {
+            height: 172px !important;
+        }
+    }
+}
+
+#second-sublist {
+    &:hover {
+        opacity: 1;
+        height: 172px !important;
+
+        @include laptop {
+            height: 191px !important;
+        }
+    }
+}
+
+.navigation__subslist-item {
+    width: 100%;
+}
+
+.navigation__subslist-link {
+    display: inline-block;
+    width: calc(100% - 16px);
+    padding: 12px 8px;
+    text-decoration: none;
+    color: #141414;
+    transition: .2s;
+
+    &:hover {
+        background: darken(white, 2%);
+        color: #2b95f3;
+    }
+
+    &.is-active {
+        background: darken(white, 2%);
+        color: #2b95f3;
+    }
+}
