@@ -326,7 +326,7 @@
   top: 38px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 120%;
+  width: 130%;
   background-color: white;
   border-radius: 4px;
   list-style-type: none;
@@ -345,11 +345,12 @@
     top: 34px;
     -webkit-box-shadow: 1px 1px 6px #141414;
             box-shadow: 1px 1px 6px #141414;
+    width: 130%;
   }
 }
 
 #first-sublist {
-  width: 150%;
+  width: 130%;
 }
 
 #first-sublist:hover {
