@@ -163,6 +163,42 @@
   color: #2b95f3;
 }
 
+.ski-school__flyers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.ski-school__flyers img {
+  border-radius: 8px;
+}
+
+@media (max-width: 927px) {
+  .ski-school__flyers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ski-school__flyers img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 572px) {
+  .ski-school__flyers img {
+    width: 310px;
+  }
+}
+
 .ski-school__price-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +219,10 @@
   .ski-school__price-box {
     font-size: 15px;
   }
+}
+
+.ski-school__price-box + .ski-school__flyers {
+  margin-top: 48px;
 }
 
 .ski-school__price-title {

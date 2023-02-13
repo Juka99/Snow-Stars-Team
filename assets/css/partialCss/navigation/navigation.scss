@@ -88,10 +88,6 @@ $laptop: 1200px;
     padding: 16px 0;
     transition: .2s;
 
-    @include optionalZero {
-        justify-content: unset;
-    }
-
     @include optionalOne {
         gap: 100px;
     }
@@ -179,8 +175,8 @@ $laptop: 1200px;
 .navigation__right {
     margin-right: 80px;
 
-    @include optionalTwo {
-        margin-right: 0;
+    @include optionalThree {
+        margin-right: 40px;
     }
 }
 
@@ -189,16 +185,8 @@ $laptop: 1200px;
     gap: 66px;
     list-style-type: none;
 
-    @include optionalOne {
-        gap: 43px;
-    }
-
-    @include optionalTwo {
-        gap: 37px;
-    }
-
     @include optionalThree {
-        gap: 22px;
+        gap: 44px;
     }
 
     @include laptop {
@@ -326,7 +314,11 @@ $laptop: 1200px;
 }
 
 #first-sublist {
-    width: 130%;
+    width: 150%;
+
+    @include laptop {
+        width: 130%;
+    }
 
     &:hover {
         opacity: 1;
@@ -344,7 +336,7 @@ $laptop: 1200px;
         height: 172px !important;
 
         @include laptop {
-            height: 191px !important;
+            height: 172px !important;
         }
     }
 }

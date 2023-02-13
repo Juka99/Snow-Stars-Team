@@ -1,11 +1,18 @@
 $optionalThree: 1400px;
 $laptop: 1200px;
+$optionalFour: 927px;
 $phoneLandscape: 768px;
 $phonePortrait: 572px;
 $phone: 400px;
 
 @mixin optionalThree {
     @media (max-width: #{$optionalThree}){
+        @content;
+    }
+}
+
+@mixin optionalFour {
+    @media (max-width: #{$optionalFour}){
         @content;
     }
 }
@@ -168,6 +175,32 @@ $phone: 400px;
     }
 }
 
+.ski-school__flyers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+
+    img {
+        border-radius: 8px;
+    }
+    
+    @include optionalFour {
+        flex-direction: column;
+
+        img {
+            width: 500px;
+        }
+    }
+
+    @include phonePortrait {
+        img {
+            width: 310px;
+        }
+    }
+}
+
 .ski-school__price-box {
     display: flex;
     justify-content: space-between;
@@ -180,6 +213,10 @@ $phone: 400px;
     @include phone {
         font-size: 15px;
     }
+}
+
+.ski-school__price-box + .ski-school__flyers {
+    margin-top: 48px;
 }
 
 .ski-school__price-title {

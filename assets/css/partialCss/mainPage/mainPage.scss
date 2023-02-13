@@ -71,7 +71,8 @@ $phoneSmall: 370px;
 .main-section__title {
     color: white;
     font-size: 68px;
-    padding-bottom: 8px;
+    padding: 0 12px 8px 12px;
+    text-align: center;
 
     @include phoneLandscape {
         font-size: 52px;
@@ -87,6 +88,8 @@ $phoneSmall: 370px;
 .main-section__description {
     color: white;
     font-size: 28px;
+    padding: 0 12px;
+    text-align: center;
 
     @include phoneSmall {
         text-align: center;
@@ -287,6 +290,7 @@ $phoneSmall: 370px;
     padding: 16px 0 16px 32px;
     line-height: 24px;
     font-weight: 500;
+    font-size: 17px;
 
     @include phonePortrait {
         padding: 16px 0 16px 16px;
